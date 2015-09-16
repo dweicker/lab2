@@ -7,6 +7,10 @@ close all;
 [~,x3] = ode45(@flow,[0 10],[-4 1]');
 [~,x4] = ode45(@flow,[0 10],[-4 1.6]');
 plot(x1(:,1),x1(:,2),x2(:,1),x2(:,2),x3(:,1),x3(:,2),x4(:,1),x4(:,2),2*sin(0:0.1:2*pi),2*cos(0:0.1:2*pi),'k--');axis equal;
+title('Flow of four particles');
+legend('y(0)=0.2','y(0)=0.6','y(0)=1.0','y(0)=1.6');
+xlabel('Direction x');
+ylabel('Direction y');
 
 end
 
