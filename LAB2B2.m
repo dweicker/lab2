@@ -16,14 +16,9 @@ end
 display(numbStep);
 display(numbStiff);
 
-h = zeros(1,length(t)-1);
-hstiff = zeros(1,length(tstiff)-1);
-for i=1:length(t)-1
-    h(i) = t(i+1)-t(i);
-end
-for i=1:length(tstiff)-1
-    hstiff(i) = tstiff(i+1)-tstiff(i);
-end
+h = diff(t);
+hstiff = diff(tstiff);
+
 figure; 
 plot(t(1:end-1),h);
 figure;
