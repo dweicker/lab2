@@ -1,1 +1,19 @@
-bli bli bli
+In this section, we will investigate the stabilty of a Runge-Kutta method. We will study a stiff problem, the Robertson's equations. As a remainder, here is the problem : 
+
+\begin{eqnarray*}
+\textbf{x}' =& \left( \begin{array}{c}
+-k_1x_1+k_2x_2x_3 \\ 
+k_1x_1-k_2x_2x_3-k_3x_2^2 \\ 
+k_3x_2^2 
+\end{array} \right) \\
+\textbf{x} =& \left( \begin{array}{c}
+1 \\ 
+0 \\ 
+0 
+\end{array} \right)
+\end{eqnarray*}
+
+The problem is stiff because of the practical values of the parameters. In this example, we have $k_1=0.04$, $k_2=10^4$ and $k_3=3 \cdot 10^7$.
+
+\subsection*{B1. Constant stepsize experiment}
+We are going to solve the Robertson's problem first with a constant stepsize.
