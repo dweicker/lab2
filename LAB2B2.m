@@ -7,7 +7,7 @@ numbStep = zeros(1,4);
 numbStiff = zeros(1,4);
 for i=1:4
     reltol = tol(i);
-    options = odeset('RelTol',reltol);
+    options = odeset('RelTol',reltol);%set relative tolerance
     [t,~] = ode23(@robertson,[0 1],[1 0 0]',options);
     [tstiff,~] = ode23s(@robertson,[0 1000],[1 0 0]',options);
     numbStep(i) = length(t)-1;
@@ -20,9 +20,9 @@ h = diff(t);
 hstiff = diff(tstiff);
 
 figure; 
-plot(t(1:end-1),h);
+plot(t(1:end-1),h);title('Adaptative stepsize with ode23 and reltol = 1e-6');xlabel('Time (sec'); ylabel('Stepsize (sec)');
 figure;
-plot(tstiff(1:end-1),hstiff);
+plot(tstiff(1:end-1),hstiff);title('Adaptative stepsize with ode23s and reltol = 1e-6');xlabel('Time (sec)'); ylabel('Stepsize (sec)');
 end
 
 function dxdt = robertson(t,x)

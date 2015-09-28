@@ -16,4 +16,83 @@ k_3x_2^2
 The problem is stiff because of the practical values of the parameters. In this example, we have $k_1=0.04$, $k_2=10^4$ and $k_3=3 \cdot 10^7$.
 
 \subsection*{B1. Constant stepsize experiment}
-We are going to solve the Robertson's problem first with a constant stepsize.
+
+We are going to solve the Robertson's problem first with a constant stepsize. The Matlab code can be found at the end of this section. We had to try and see if the method was stable for this problem using different numbers of steps, namely $N = [125, 250, 500, 1000, 2000]$. The answer given by our code was that it was not stable for $N =[125, 250, 500]$. Thus, the smallest number of steps (from the 5 given) needed to obtain a stable solution is $n = 1000$. The solution for the smallest step size ($n = 2000$) is given in figure \ref{robert}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{robert.eps}
+\caption{Robertson's problem with $n = 2000$}
+\label{robert}
+\end{center}
+\end{figure}
+
+%Ce truc insere mon code MATLAB (nice!) 
+\lstinputlisting{LAB2B1.m}
+
+\subsection*{B2. Adaptative stepsize experiment using Matlab functions}
+
+In this section, we are going to use the built-in IVP-solvers. As usual, the code can be found at the end of the section. 
+
+There are many different solvers available. Our first task was to use the non-stiff solver $ode23$ for different relative tolerances (using $odeset$) and for a time span of one second. Then, we were to plot a graph of the step size as a function of time for one of the tolerance. The following table gives the number of steps for each relative tolerance.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{RelTol} & \textbf{Number of steps} \\ 
+\hline 
+$10^{-3}$ & 866 \\ 
+\hline 
+$10^{-4}$ & 867 \\ 
+\hline 
+$10^{-5}$ & 868 \\ 
+\hline 
+$10^{-6}$ & 868 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+We can see that the number of step increases but not significantly as the relative tolerance constraint increases. The plot of the stepsize as a function of time for the $RelTol = 10^{-6}$ can be seen in figure \ref{step1}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{step1.eps}
+\caption{Adaptative stepsize with $ode23$ for $RelTol = 10^{-6}$}
+\label{step1}
+\end{center}
+\end{figure}
+
+Even if we can see some oscillations in the beginning, the stepsize appear to stay around the same value. That is hardly adaptative.\\
+
+Our second task was to use a stiff solver, namely $ode23s$, and do the experiment again but for a larger time span, from 0 to 1000 seconds. We obtained the following numbers of step for the given tolerances.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{RelTol} & \textbf{Number of steps} \\ 
+\hline 
+$10^{-3}$ & 30 \\ 
+\hline 
+$10^{-4}$ & 37 \\ 
+\hline 
+$10^{-5}$ & 48 \\ 
+\hline 
+$10^{-6}$ & 62 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+First, we can noticed that even though the t-interval is a thousand time longer, the number of steps taken by $ode23s$ is lesser. Second, now the number of steps increases as the relative tolerance constraint increases. That is a good thing because it means that the stepsize is governed by the relative tolerance and not some other factor. We were also asked to plot the stepsize as a function of time for $ode23s$. We choose the same relative tolerance that the one used before, that is $RelTol = 10^{-6}$ This is shown in figure \ref{step2}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{step2.eps}
+\caption{Adaptative stepsize with $ode23s$ for $RelTol = 10^{-6}$}
+\label{step2}
+\end{center}
+\end{figure}
+
+We can see that the value of the stepsize is way larger than for $ode23$. This is an example of why a stiff solver is better when confronting a stiff problem.
+
+%Ce truc insere mon code MATLAB (nice!) 
+\lstinputlisting{LAB2B2.m}
