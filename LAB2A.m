@@ -1,10 +1,14 @@
 function [] = LAB2A()
-%LAB2A 
+ % Function for LAB2 question A. 
+% Authors: David Weicker and Florentin Goyens
 close all;
 
-N = [10 20 40 80 160 320];
+% N = [10 20 40 80 160 320]; for N
+N = [320 160 80 40 20 10];
 value = zeros(1,length(N));
 init = [1 0]'; %initial conditions
+
+% Solve equation
 for j = 1:length(N)
     n = N(j);
     u = [init zeros(2,n)];
@@ -17,8 +21,15 @@ for j = 1:length(N)
     end
     value(j) = u(1,end);
 end
-error = abs(value-value(end));
-loglog(N,error,'b-',N,error,'r.','MarkerSize',15);
+
+% Plot error to estimate the order of the method
+% error = abs(value-value(end)); for N
+error = abs(value-value(1));% for h
+% loglog(N,error,'b-',N,error,'r.','MarkerSize',15);% for N
+loglog(1./N,error,'b-',1./N,error,'r.','MarkerSize',15);% for h 
+title('Evolution of error with step size');
+xlabel('Step size h');
+ylabel('Estimated error at t=1');
 end
 
 function dudt = vanderpol(t,u)
