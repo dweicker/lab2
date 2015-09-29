@@ -1,5 +1,6 @@
 function [] = LAB2B2()
-%LAB2B2 
+% Function for LAB2 question B2. 
+% Authors: David Weicker and Florentin Goyens
 close all;
 
 tol = [1e-3 1e-4 1e-5 1e-6];
@@ -20,7 +21,7 @@ h = diff(t);
 hstiff = diff(tstiff);
 
 figure; 
-plot(t(1:end-1),h);title('Adaptative stepsize with ode23 and reltol = 1e-6');xlabel('Time (sec'); ylabel('Stepsize (sec)');
+plot(t(1:end-1),h);title('Adaptative stepsize with ode23 and reltol = 1e-6');xlabel('Time (sec)'); ylabel('Stepsize (sec)');
 figure;
 plot(tstiff(1:end-1),hstiff);title('Adaptative stepsize with ode23s and reltol = 1e-6');xlabel('Time (sec)'); ylabel('Stepsize (sec)');
 end

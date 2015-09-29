@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.4)  29 SEP 2015 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.4)  29 SEP 2015 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1357,14 +1357,14 @@ Package epstopdf Info: Source file: <./a1.eps>
 (epstopdf)                    size: 9613 bytes
 (epstopdf)             Command: <repstopdf --outfile=./a1-eps-converted-to.pdf 
 ./a1.eps>
-(epstopdf)             \includegraphics on input line 28.
+(epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
 
 <./a1-eps-converted-to.pdf, id=8, 433.62pt x 342.27875pt>
 File: ./a1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./a1-eps-converted-to.pdf>
-Package pdftex.def Info: ./a1-eps-converted-to.pdf used on input line 28.
+Package pdftex.def Info: ./a1-eps-converted-to.pdf used on input line 30.
 (pdftex.def)             Requested size: 407.66833pt x 321.80994pt.
 
 
@@ -1374,7 +1374,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 36.
+nput line 38.
 
 (./LAB2A.m
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1411,35 +1411,43 @@ File: robert-eps-converted-to.pdf Graphic file (type pdf)
 <use robert-eps-converted-to.pdf>
 Package pdftex.def Info: robert-eps-converted-to.pdf used on input line 24.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
- (./LAB2B1.m [3]) [4pdfTeX warning (ext4): destination with the same identifier
+ [3] (./LAB2B1.m) [4pdfTeX warning (ext4): destination with the same identifier
  (name{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.56 
-      <./robert-eps-converted-to.pdf>]
+l.38 T
+      here are many different solvers available. Our first task was to use t...
+ <./robert-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <step1.eps>
-(epstopdf)                    date: 2015-09-28 13:13:32
-(epstopdf)                    size: 13767 bytes
+(epstopdf)                    date: 2015-09-29 14:14:41
+(epstopdf)                    size: 13769 bytes
 (epstopdf)             Output file: <step1-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-28 13:13:38
-(epstopdf)                    size: 9662 bytes
+(epstopdf)                    date: 2015-09-29 14:14:47
+(epstopdf)                    size: 9661 bytes
 (epstopdf)             Command: <repstopdf --outfile=step1-eps-converted-to.pdf
  step1.eps>
-(epstopdf)             \includegraphics on input line 59.
+(epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<step1-eps-converted-to.pdf, id=143, 562.1pt x 421.575pt>
+<step1-eps-converted-to.pdf, id=141, 562.1pt x 421.575pt>
 File: step1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use step1-eps-converted-to.pdf>
-Package pdftex.def Info: step1-eps-converted-to.pdf used on input line 59.
+Package pdftex.def Info: step1-eps-converted-to.pdf used on input line 60.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.87 
+      <./step1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <step2.eps>
 (epstopdf)                    date: 2015-09-28 13:13:23
 (epstopdf)                    size: 9023 bytes
@@ -1448,21 +1456,23 @@ Package epstopdf Info: Source file: <step2.eps>
 (epstopdf)                    size: 7513 bytes
 (epstopdf)             Command: <repstopdf --outfile=step2-eps-converted-to.pdf
  step2.eps>
-(epstopdf)             \includegraphics on input line 89.
+(epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
-<step2-eps-converted-to.pdf, id=145, 562.1pt x 421.575pt>
+
+<step2-eps-converted-to.pdf, id=155, 562.1pt x 421.575pt>
 File: step2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use step2-eps-converted-to.pdf>
-Package pdftex.def Info: step2-eps-converted-to.pdf used on input line 89.
+Package pdftex.def Info: step2-eps-converted-to.pdf used on input line 90.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
- (./LAB2B2.m [5pdfTeX warning (ext4): destination with the same identifier (nam
-e{figure.3}) has been already used, duplicate ignored
+ (./LAB2B2.m [6pdfTeX warning (ext4): destination with the same identifier (nam
+e{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.9     reltol 
-               = tol(i); <./step1-eps-converted-to.pdf>])) (./partC.tex
+l.29 function 
+              dxdt = robertson(t,x) <./step2-eps-converted-to.pdf>]))
+(./partC.tex
 Package epstopdf Info: Source file: <./c1.eps>
 (epstopdf)                    date: 2015-09-29 13:40:27
 (epstopdf)                    size: 21058 bytes
@@ -1473,20 +1483,12 @@ Package epstopdf Info: Source file: <./c1.eps>
 ./c1.eps>
 (epstopdf)             \includegraphics on input line 5.
 Package epstopdf Info: Output file is already uptodate.
-
-<./c1-eps-converted-to.pdf, id=166, 418.56375pt x 318.18875pt>
+ <./c1-eps-converted-to.pdf, id=195, 418.56375pt x 318.18875pt>
 File: ./c1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./c1-eps-converted-to.pdf>
 Package pdftex.def Info: ./c1-eps-converted-to.pdf used on input line 5.
 (pdftex.def)             Requested size: 407.66833pt x 309.90504pt.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.8 \end{figure}
-                 <./step2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./c2.eps>
 (epstopdf)                    date: 2015-09-29 13:40:27
 (epstopdf)                    size: 42925 bytes
@@ -1498,25 +1500,21 @@ Package epstopdf Info: Source file: <./c2.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<./c2-eps-converted-to.pdf, id=209, 433.62pt x 321.2pt>
+<./c2-eps-converted-to.pdf, id=196, 433.62pt x 321.2pt>
 File: ./c2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./c2-eps-converted-to.pdf>
 Package pdftex.def Info: ./c2-eps-converted-to.pdf used on input line 18.
 (pdftex.def)             Requested size: 407.66833pt x 301.99176pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
-has been already used, duplicate ignored
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.22 \FloatBarrier
-                   <./c1-eps-converted-to.pdf>] (./LAB2C1.m) [8pdfTeX warning (
-ext4): destination with the same identifier (name{figure.6}) has been already u
-sed, duplicate ignored
+l.21 \end{figure}
+                  <./c1-eps-converted-to.pdf>] (./LAB2C1.m) [8pdfTeX warning (e
+xt4): destination with the same identifier (name{figure.6}) has been already us
+ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1533,10 +1531,10 @@ Package rerunfilecheck Info: File `lab2.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 22508 strings out of 493117
- 391259 string characters out of 6135433
- 643318 words of memory out of 5000000
- 25250 multiletter control sequences out of 15000+600000
+ 22507 strings out of 493117
+ 391258 string characters out of 6135433
+ 642318 words of memory out of 5000000
+ 25249 multiletter control sequences out of 15000+600000
  56871 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,72p,681b,2362s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1558,7 +1556,7 @@ ve/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2014/texmf-dist/fo
 nts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
 public/lm/lmtt8.pfb>
-Output written on lab2.pdf (9 pages, 334998 bytes).
+Output written on lab2.pdf (9 pages, 335457 bytes).
 PDF statistics:
  402 PDF objects out of 1000 (max. 8388607)
  358 compressed objects within 4 object streams
