@@ -3,7 +3,6 @@ function [] = LAB2A()
 % Authors: David Weicker and Florentin Goyens
 close all;
 
-% N = [10 20 40 80 160 320]; for N
 N = [320 160 80 40 20 10];
 value = zeros(1,length(N));
 init = [1 0]'; %initial conditions
@@ -23,10 +22,8 @@ for j = 1:length(N)
 end
 
 % Plot error to estimate the order of the method
-% error = abs(value-value(end)); for N
 error = abs(value-value(1));% for h
-% loglog(N,error,'b-',N,error,'r.','MarkerSize',15);% for N
-loglog(1./N,error,'b-',1./N,error,'r.','MarkerSize',15);% for h 
+loglog(1./N,error,'b-',1./N,error,'r.','MarkerSize',15); 
 title('Evolution of error with step size');
 xlabel('Step size h');
 ylabel('Estimated error at t=1');

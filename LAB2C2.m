@@ -4,13 +4,13 @@ function [] = LAB2C2()
 close all;
 a = [pi/6 pi/4 pi/3];
 k = [0.02 0.065];
-options = odeset('NonNegative',3); % ensures that y stays non negative
+options = odeset('NonNegative',3); % brings negative y to zero
 result = cell(3,2);
 
 for j=1:2
     for i=1:3
     init = [0 20*cos(a(i)) 1.5 20*sin(a(i))]';
-    [~,y] = ode45(@(t,x) throw(t,x,k(j)),[0 3],init,options);% quid du @(tx,) ?
+    [~,y] = ode45(@(t,x) throw(t,x,k(j)),[0 3],init,options);
     result{i,1} = y(:,1);
     result{i,2} = y(:,3);
     end
