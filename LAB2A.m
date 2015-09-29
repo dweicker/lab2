@@ -1,4 +1,4 @@
-function [] = LAB2A()
+function [n_approx] = LAB2A()
  % Function for LAB2 question A. 
 % Authors: David Weicker and Florentin Goyens
 close all;
@@ -27,6 +27,8 @@ loglog(1./N,error,'b-',1./N,error,'r.','MarkerSize',15);
 title('Evolution of error with step size');
 xlabel('Step size h');
 ylabel('Estimated error at t=1');
+
+n_approx = log(error(2)/error(end))/log(N(end)/N(2)); %returns an approximation of the order
 end
 
 function dudt = vanderpol(t,u)
